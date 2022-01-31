@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public abstract class Zvire {
+public class Zvire {
 
 	private LocalDate datumNarozeni;
 	private List<Integer> hodinyKrmeni;

@@ -2,7 +2,7 @@ package zoo.abstraktni;
 
 import java.time.LocalDate;
 
-public abstract class Savec extends Zvire {
+public class Savec extends Zvire {
 
 	public static final boolean TEPLOKREVNOST = true;
 	
@@ -17,5 +17,11 @@ public abstract class Savec extends Zvire {
 		System.out.println(citoslovce);
 	}
 	
+	public double getTelesnaTeplota() {
+		return telesnaTeplota;
+	}
 	
+	public void setTelesnaTeplota(double telesnaTeplota) {
+		this.telesnaTeplota = telesnaTeplota;
+	}
 }
