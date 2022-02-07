@@ -10,5 +10,10 @@ public class Plaz extends Zvire {
 		super(datumNarozeni, jmeno, zijeVCesku);
 	}
 		
-	
+	@Override
+	public void vypisInformace() {
+		System.out.println("Zvíøe je plaz a je studenokrevné");
+		System.out.println("Jméno: " + (this.jmeno == null ? "Beze jména" : this.jmeno));
+		System.out.println("Datum narození: " + (datumNarozeni == null ? "nedefinováno" : datumNarozeni.format(formatter)));
+	}
 }

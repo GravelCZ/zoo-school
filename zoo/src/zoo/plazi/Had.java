@@ -10,4 +10,9 @@ public class Had extends Plaz {
 		super(datumNarozeni, jmeno, zijeVCesku);
 	}
 
+	@Override
+	public void vypisInformace() {
+		super.vypisInformace();
+		System.out.println("Jedná se o hada");
+	}
 }

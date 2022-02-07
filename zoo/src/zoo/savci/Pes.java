@@ -10,4 +10,9 @@ public class Pes extends Savec {
 		super(datumNarozeni, jmeno, zijeVCesku, telesnaTeplota);
 	}
 
+	@Override
+	public void vypisInformace() {
+		//super.vypisInformace();
+		System.out.println("Jsem pes!");
+	}
 }
