@@ -38,23 +38,19 @@ public class ZooAplikace {
 		//plazi
 		Had had = new Had(datumNarození, "Had", true);
 		had.setHodinyKrmeni(krmeni);
-		had.setPocetKrmeniZaDen(krmeni.size());
 		had.vypisInformace();
 		
 		Krokodyl krokodyl = new Krokodyl(datumNarození, "Dandee", false);
 		krokodyl.setHodinyKrmeni(krmeni);
-		krokodyl.setPocetKrmeniZaDen(krmeni.size());
 		krokodyl.vypisInformace();
 		
 		Zelva zelva = new Zelva(datumNarození, "Zelva III. Posvátná Habsburkská", true);
 		zelva.setHodinyKrmeni(krmeni);
-		zelva.setPocetKrmeniZaDen(krmeni.size());
 		zelva.vypisInformace();
 		
 		//savci
 		Medved medved = new Medved(datumNarození, "Nedvìd", true, 35.5);
 		medved.setHodinyKrmeni(krmeni);
-		medved.setPocetKrmeniZaDen(krmeni.size());
 		medved.vypisInformace();
 		
 		Period vek = medved.zjistiVek();
@@ -62,7 +58,6 @@ public class ZooAplikace {
 		
 		Pes pes = new Pes(datumNarození, "Sep", true, 28.2);
 		pes.setHodinyKrmeni(krmeni);
-		pes.setPocetKrmeniZaDen(krmeni.size());
 		pes.vypisInformace();
 	}
 

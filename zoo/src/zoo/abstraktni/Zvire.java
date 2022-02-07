@@ -23,6 +23,9 @@ public class Zvire {
 		this.zijeVCesku = zijeVCesku;
 	}
 	
+	/**
+	 * Vypíše informace
+	 */
 	public void vypisInformace() {
 		System.out.println("Datum narození: " + (datumNarozeni == null ? "nedefinováno" : datumNarozeni.format(formatter)));	
 		System.out.println("Poèet hodin krmení za den: " + this.pocetKrmeniZaDen);
@@ -43,17 +46,14 @@ public class Zvire {
 	public List<Integer> getHodinyKrmeni() {
 		return hodinyKrmeni;
 	}
-
+	
 	public void setHodinyKrmeni(List<Integer> hodinyKrmeni) {
+		this.pocetKrmeniZaDen = hodinyKrmeni.size();
 		this.hodinyKrmeni = hodinyKrmeni;
 	}
 
 	public int getPocetKrmeniZaDen() {
 		return pocetKrmeniZaDen;
-	}
-
-	public void setPocetKrmeniZaDen(int pocetKrmeniZaDen) {
-		this.pocetKrmeniZaDen = pocetKrmeniZaDen;
 	}
 
 	public LocalDate getDatumNarozeni() {
